@@ -1,20 +1,25 @@
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
+# 3-bit ALU
 
 ## How it works
 
-Explain how your project works
+This is a 3-bit ALU implemented with logic gates.
+It can perform the following operations:
+- Addition
+- Subtraction
+- Multiplication
+- Division
+
+It also has status flags for:
+- Overflow
+- Negative result
+- Error (division by zero)
 
 ## How to test
 
-Explain how to use your project
+Use the switches to set the two 3-bit operands (A and B) and the operation selector.
+The result and flags will appear on the output LEDs / 7-segment display.
 
-## External hardware
+## Pinout
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+- Inputs: A[2:0], B[2:0], OP[1:0]
+- Outputs: Result[3:0], Overflow, Negative, Error
