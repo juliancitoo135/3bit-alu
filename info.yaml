@@ -1,10 +1,10 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
   wokwi_id:     481429205238628353       # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        "3-bit ALU"      # Project title
+  title:        "3-bit Adder"      # Project title
   author:       "JOSE JULIAN VAZQUEZ HERNANDEZ"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "3-bit ALU with logic gates (add, subtract, multiply, divide)"      # One line description of what your project does
+  description:  "3-bit adder with logic gates and carry flags"      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -17,23 +17,23 @@ project:
 pinout:
   # Inputs
   ui[0]: "A0"
-  ui[1]: "A1"
-  ui[2]: "A2"
-  ui[3]: "B0"
-  ui[4]: "B1"
+  ui[1]: "B0"
+  ui[2]: "A1"
+  ui[3]: "B1"
+  ui[4]: "A2"
   ui[5]: "B2"
-  ui[6]: "OP0"
-  ui[7]: "OP1"
+  ui[6]: ""
+  ui[7]: ""
   
   # Outputs
-  uo[0]: "RES0"
-  uo[1]: "RES1"
-  uo[2]: "RES2"
-  uo[3]: "RES3"
-  uo[4]: "Overflow"
-  uo[5]: "Negative"
-  uo[6]: "Error"
-  uo[7]: "Zero"
+  uo[0]: "SUM0"
+  uo[1]: "SUM1"
+  uo[2]: "SUM2"
+  uo[3]: "Carry0"
+  uo[4]: "Carry1"
+  uo[5]: "Carry2"
+  uo[6]: ""
+  uo[7]: ""
 
   # Bidirectional pins
   uio[0]: ""
